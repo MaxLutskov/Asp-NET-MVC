@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MVC.Models;
 
 namespace MVC.Controllers
 {
@@ -8,7 +9,7 @@ namespace MVC.Controllers
         {
             if(name!=null)
             {
-                ViewData["Message"] = "Hello " + name;
+                HelloName.Name = name;
                 return View("HelloName");
             }
             

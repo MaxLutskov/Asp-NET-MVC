@@ -1,5 +1,6 @@
-﻿<link rel="stylesheet" href="css/site.css">
+﻿@model MVC.Models.HelloName
+<link rel="stylesheet" href="css/site.css">
 <div class="center-outer">
-    <h1 class="center-inner">@ViewData["Message"]</h1>
+    <h1 class="center-inner">Hello @Html.DisplayFor(model => MVC.Models.HelloName.Name)</h1>
 </div>
 
